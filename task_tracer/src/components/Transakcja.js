@@ -16,11 +16,11 @@ function Transakcja({setHistoria,setSaldo}) {
     if(inputs.value<0){
       //setSaldo((saldo) => [...saldo,{wyplywy: inputs.value}])
       setSaldo(previousState => {
-        return { ...previousState, wyplywy: previousState.wyplywy+inputs.value  }
+        return { ...previousState, wyplywy: inputs.value  }
       })
     }else{
       setSaldo(previousState => {
-        return { ...previousState, wplywy: previousState.wplywy+inputs.value }
+        return { ...previousState, wplywy: inputs.value }
       })
     }
   }
