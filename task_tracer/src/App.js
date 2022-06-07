@@ -14,6 +14,7 @@ function App() {
     <BilansContext.Provider value={bilans}>
       <div className="App">
         <h1 className='title'>Expense Tracker</h1>
+        
         <Bilans historia={historia}></Bilans>
         <Saldo saldo={saldo}></Saldo>
         <h2 className='BottomBorder'>Historia</h2>

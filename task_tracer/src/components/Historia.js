@@ -2,15 +2,15 @@ import React from 'react'
 
 function Historia({historia}) {
   return (
-      
-      historia.name==='Zaupy'?(<div>Brak</div>):
-       <div className='Tak'> {historia.map((hist, id)=>( 
-         <ul style={{listStyleType : 'none', maxWidth:'100%', padding:'0'}}>
+    <ul style={{listStyleType : 'none', maxWidth:'100%', padding:'0'}}>
+      {historia.name ===""?(<div>Brak</div>):
+       < > {historia.map((hist, id)=>( 
          <li key={id}>
-           <span className='Historia1'>{hist.name}</span><span className='Historia2'> {hist.value}</span>
+           <><span>{hist.name}</span></>< > <span style={{float: 'right'}}>{hist.value}</span> </>
          </li>
-         </ul>))}
-       </div>
+        ))}
+       </>}
+       </ul>
   )
 }
 
