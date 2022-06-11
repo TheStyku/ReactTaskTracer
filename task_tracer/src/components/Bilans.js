@@ -1,9 +1,9 @@
 
 
-function Bilans({historia}) {
+function Bilans({bilans}) {
  
   return (
-   <h2 className="Bilans">Bilans: <br/>{historia.value}</h2>
+   <h2 className="Bilans">Bilans: {bilans}</h2>
   )
 }
 

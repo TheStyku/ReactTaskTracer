@@ -1,12 +1,13 @@
 import React, { useState } from 'react'
 
-function Transakcja({ setHistoria, setSaldo }) {
+function Transakcja({ setHistoria, setSaldo, SetBilans }) {
   const [name, SetName] = useState("");
   const [number, setNumber] = useState(0);
 
   const handleSubmit = (event) => {
     event.preventDefault();
     setHistoria((historia) => [...historia, { name: name, value: number }]);
+    SetBilans(previous => previous + number)
     if (number < 0) {
       setSaldo(previousState => {
         return { ...previousState, wyplywy: number + previousState.wyplywy }

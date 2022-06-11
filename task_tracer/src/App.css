@@ -1,5 +1,5 @@
 body {
-     background-color: rgb(228, 234, 236);
+     background-color:#fffbf0;
 }
 
 div {
@@ -19,7 +19,8 @@ div {
     text-align:start ;
 }
 .Saldo {
-    background-color: antiquewhite;
+    background-color: #e4ddf4;
+    border-style: outset;
     margin: auto;
     display: flex;
     flex-direction: row;
@@ -52,12 +53,17 @@ div {
     width: 100%;
     margin-top: 8px;
     padding: 1rem;
-    background-color: rgb(134, 91, 175);
+    background-color: #2d2d2d;
     color:white;
     border-radius: 12px;
 }
 
 .Cards{
-    background-color: antiquewhite;
-    border-radius: 10rem;
+    background-color:#c8d8e4;
+    border-radius: 15px;
+    border-style: outset;
+    margin:  5px 0px;
+    padding: 5px 10px;
+    font-size: large;
+    font-weight:bold;
 }

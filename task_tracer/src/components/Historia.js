@@ -6,7 +6,10 @@ function Historia({ historia }) {
       {Array.isArray(historia) && !historia.length === true ? (<div style={{ textAlign: 'center' }}>Brak</div>) :
         < > {historia.map((hist, id) => (
           <li className='Cards' key={id}>
-            <><span>{hist.name}</span></>< > <span style={{ float: 'right' }}>{hist.value}</span> </>
+            <><span>{hist.name}</span></>
+            < > {hist.value < 0?(<span style={{ float: 'right', color: 'red' }}>{hist.value}</span>):
+            <span style={{ float: 'right', color: 'green' }}>{hist.value}</span>
+            } </>
           </li>
         ))}
         </>}
