@@ -11,8 +11,8 @@ function App() {
   const [bilans,SetBilans] = useState(0)
 
   return (
-      <div className="App">
-        <h1 className='title'>Expense Tracker</h1>   
+      <div className="container">
+        <h1 className='title'>Menadżer wydadków</h1>   
         <Bilans bilans={bilans}></Bilans>
         <Saldo saldo={saldo}></Saldo>
         <h2 className='BottomBorder'>Historia</h2>
